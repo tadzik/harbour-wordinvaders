@@ -1,0 +1,8 @@
+{
+    "files" : [
+        "wordinvaders.ts"
+    ],
+    "compilerOptions" : {
+        "outFile" : "qml/harbour-wordinvaders.js"
+    }
+}
