@@ -82,7 +82,7 @@ Page {
 
         Timer {
             interval: 16
-            running: true
+            running: Qt.application.state == Qt.ApplicationActive
             repeat: true
             onTriggered: {
                 searchfield.forceActiveFocus()
