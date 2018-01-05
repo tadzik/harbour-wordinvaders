@@ -40,25 +40,28 @@ Page {
     property int score: 0
 
     Label {
-        text: score + " points "
+        text: score + " points"
         opacity: 0.3
         font.pixelSize: Theme.fontSizeHuge
-        anchors.right: parent.right
-        anchors.top: parent.top
+        anchors {
+            right: parent.right
+            rightMargin: Theme.paddingMedium
+            top: parent.top
+        }
     }
 
     Column {
         id: gameover
         visible: false
-        anchors.horizontalCenter: page.horizontalCenter
-        anchors.verticalCenter: page.verticalCenter
+        anchors.centerIn: parent
         Label {
-
             text: "GAME OVER"
             font.pixelSize: Theme.fontSizeHuge
+            anchors.horizontalCenter: parent.horizontalCenter
         }
         Button {
             text: "Try again"
+            anchors.horizontalCenter: parent.horizontalCenter
             onClicked: {
                 engine.restart()
                 gameover.visible = false
