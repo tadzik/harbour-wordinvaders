@@ -13,7 +13,7 @@ Name:       harbour-wordinvaders
 %{!?qtc_make:%define qtc_make make}
 %{?qtc_builddir:%define _builddir %qtc_builddir}
 Summary:    Fend of the alien invasion by practicing your typing skills
-Version:    0.1
+Version:    0.2
 Release:    1
 Group:      Amusements/Games
 License:    MIT
